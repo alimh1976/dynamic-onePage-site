@@ -1,0 +1,91 @@
+/* CSS Document */
+
+body,html{
+	height: 100%;
+	
+}
+body{
+	margin: 0px;
+}
+
+.districts{
+	height: 100%;
+	transition: all 400ms;
+	background: no-repeat center center/cover;
+	position: relative;
+	
+	
+}
+.districts:nth-child(2n){
+	background: rgba(16,98,175,1.00);
+	background-image: url("images/4.jpg");
+	
+}
+.districts:nth-child(2n-1){
+	background: rgba(131,16,175,1.00);
+	background-image: url("images/2.jpg");
+}
+.districts:nth-child(3){
+	background: rgba(131,16,175,1.00);
+	background-image: url("images/3.jpg");
+}
+#indicatorWrapper{
+	color: #ccc;
+	position:fixed;
+	top: 50%;
+	left: 20px;
+	z-index: 999;
+
+}
+
+#indicatorWrapper a{
+	display: block;
+	width: 20px;
+	height: 20px;
+	border: 1px solid rgba(237,237,237,1.00);
+	border-radius: 50%;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+#indicatorWrapper a.selected{
+		background: rgba(193,165,14,1.00);
+}
+
+span.slideAnimation{
+	position: absolute;
+	left: 50%;
+	top: 0%;
+	transform: translate(-50%,-50%);
+	color: #ccc;
+	font-size: 40px;
+	opacity: 0;
+	transition: all 800ms;
+
+}
+
+.animate4{
+
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 55px;
+
+}
+
+@keyframes slider{
+	0%{
+		opacity: 0;
+		left: -30%;
+		color: cadetblue;
+	}
+	100%{
+		opacity: 1;
+		left: 50%;
+		color: yellowgreen;
+	}
+}
+
+.animate-district4{
+	animation:  slider 1600ms  linear both;
+}
+
