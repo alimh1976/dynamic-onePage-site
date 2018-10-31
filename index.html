@@ -86,7 +86,15 @@
 
 
 						});
-						// $(".districts:eq(3) div.animate4").removeClass("animate-district4");
+
+						if (
+
+							$(".districts:eq(3)").offset().top < window.pageYOffset + heightpercentage && window.pageYOffset + heightpercentage < $(".districts:eq(3)").offset().top + $(".districts:eq(3)").outerHeight()
+
+						){
+							$(".districts:eq(3) div.animate4").removeClass("animate-district4");
+						}
+							
 					}
 				})
 			});
