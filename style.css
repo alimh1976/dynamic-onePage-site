@@ -67,26 +67,25 @@ span.slideAnimation{
 
 	position: absolute;
 	top: 50%;
-	left: 50%;
+	left: -30%;
 	transform: translate(-50%,-50%);
 	font-size: 55px;
+	opacity: 0;
 
 }
 
 @keyframes slider{
 	0%{
-		opacity: 0;
-		left: -30%;
-		color: cadetblue;
+		color: rgb(212, 183, 17);
 	}
 	100%{
 		opacity: 1;
 		left: 50%;
-		color: yellowgreen;
+		color: rgb(23, 121, 201);
 	}
 }
 
 .animate-district4{
-	animation:  slider 1600ms  linear both;
+	animation:  slider 1600ms  linear forwards;
 }
 
