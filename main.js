@@ -62,12 +62,12 @@ $(document).ready(function () {
 
                     $(".districts:eq(3)").offset().top < window.pageYOffset + heightpercentage && window.pageYOffset + heightpercentage < $(".districts:eq(3)").offset().top + $(".districts:eq(3)").outerHeight()
 
-                ){
+                ) {
                     $(".districts:eq(3) span").remove().end().find("div.animate4").addClass("animate-district4");
-                }else{
-                    
-                        $(".districts:eq(3) div.animate4").removeClass("animate-district4");
-                    
+                } else {
+
+                    $(".districts:eq(3) div.animate4").removeClass("animate-district4");
+
                 }
 
 
@@ -81,7 +81,7 @@ $(document).ready(function () {
 
                 });
 
-                    
+
             }
         })
     });
